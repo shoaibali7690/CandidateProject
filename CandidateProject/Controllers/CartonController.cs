@@ -126,7 +126,8 @@ namespace CandidateProject.Controllers
             
             return View(carton);
         }
-
+       
+        //This method remove all the items from the carton with 1 click.
         public ActionResult DeleteAll(int cartonId)
         {
             int changesCount;
