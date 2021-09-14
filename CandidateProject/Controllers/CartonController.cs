@@ -149,6 +149,7 @@ namespace CandidateProject.Controllers
             return Content("<script>alert('Unknown error occurred. please try again later.');</script>");
         }
 
+        //This method will delete empty cartons from the system, but cannot delete cartons that have items. 
         // POST: Carton/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
